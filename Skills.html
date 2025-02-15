@@ -17,16 +17,17 @@
             padding: 20px;
             text-align: center;
         }
-        header {
+        .headerh1 {
             padding: 20px;
             font-size: 2.5rem;
             font-weight: bold;
             text-transform: uppercase;
             color: white;
-            transition: color 0.3s; /* Smooth transition */
+            transition: color 0.3s, text-decoration 0.3s; /* Smooth transition for color and underline */
         }
-        header:hover {
+        .headerh1:hover {
             color: #ff0000; /* Red color on hover */
+            text-decoration: underline; /* Add underline on hover */
         }
         .skills-container {
             display: flex;
@@ -70,7 +71,7 @@
         .skill-back {
             background-color: black;
             color: white;
-      		box-shadow: 0 0 10px #ff0000;
+            box-shadow: 0 0 10px #ff0000;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -99,7 +100,7 @@
     </style>
 </head>
 <body>
-    <header>My Skills</header>
+    <header><h1 class="headerh1">My Skills<h1></header>
     <div class="skills-container">
         <div class="skill">
             <div class="skill-inner skill-front">
