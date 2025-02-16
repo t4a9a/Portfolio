@@ -105,6 +105,19 @@
       {
       	color:red;
       }
+          .nav-container .links a.active {
+        color: #ff0000;
+    }
+
+    .nav-container .links a.active::before {
+        width: 100%;
+    }
+
+    /* For dropdown menu */
+    .dropdown .links a.active {
+        background-color: #ff0000;
+    }
+
     </style>
 </head>
 <body>
@@ -114,7 +127,7 @@
             <div class="links">
                 <a href="home.html">Home</a>
                 <a href="about.html">About</a>
-                <a href="project.html">Projects</a>
+                <a href="project.html" class="active">Projects</a>
                 <a href="contact.html">Contact</a>
                 <a href="cv.jpg" download>Download CV</a>
             </div>
