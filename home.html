@@ -249,6 +249,19 @@
             all: unset;
             cursor: pointer;
         }
+          .nav-container .links a.active {
+        color: #ff0000;
+    }
+
+    .nav-container .links a.active::before {
+        width: 100%;
+    }
+
+    /* For dropdown menu */
+    .dropdown .links a.active {
+        background-color: #ff0000;
+    }
+</style>
     </style>
 </head>
 <body>
@@ -256,7 +269,7 @@
         <div class="nav-container">
             <div class="logo">Vaibhab <span>Singh Thapa</span></div>
             <div class="links">
-                <a href="home.html">Home</a>
+                <a href="home.html" class="active">Home</a>
                 <a href="about.html">About</a>
                 <a href="contact.html">Contact</a>
                 <a href="project.html">Project</a>
@@ -268,7 +281,7 @@
         </div>
         <div class="dropdown">
             <div class="links">
-                <a href="home.html">Home</a>
+                <a href="home.html" class="active">Home</a>
                 <a href="about.html">About</a>
                 <a href="contact.html">Contact</a>
                 <a href="project.html">Project</a>
